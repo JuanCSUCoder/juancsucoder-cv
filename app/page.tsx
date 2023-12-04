@@ -11,6 +11,16 @@ export default function Home() {
       <Subtitle>
         Contact Information
       </Subtitle>
+      <ul>
+        <li>
+          <strong>Phone: </strong>
+          +57 318 650 6135
+        </li>
+        <li>
+          <strong>Email: </strong>
+          <a href="mailto:jcsu2019369@gmail.com">jcsu2019369@gmail.com</a>
+        </li>
+      </ul>
       <Subtitle>
         Profile
       </Subtitle>

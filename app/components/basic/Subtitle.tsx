@@ -5,7 +5,7 @@ export default function Subtitle({ children, className }: {
     className?: string
 }) {
     return (
-        <h2 className={'text-3xl' + (className ? ' ' + className : '')}>
+        <h2 className={'text-3xl mb-1' + (className ? ' ' + className : '')}>
             {children}
         </h2>
     )

@@ -5,7 +5,7 @@ export default function Title({ children, className }: {
 	className?: string
 }) {
     return (
-      <h1 className={"text-4xl" + (className ? " " + className : "")}>
+      <h1 className={"text-4xl mb-2" + (className ? " " + className : "")}>
         {children}
       </h1>
     );
