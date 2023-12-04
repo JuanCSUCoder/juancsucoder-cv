@@ -13,7 +13,7 @@ const teko = Teko({
   ],
   weight: [
     '300',
-    '500'
+    '400'
   ]
 })
 

@@ -5,3 +5,8 @@
 html {
   font-size: 20px;
 }
+
+a {
+  color: blue;
+  /* text-decoration: underline; */
+}
