@@ -1,4 +1,5 @@
 import Subtitle from "@/components/basic/Subtitle";
+import SubSubTitle from "../components/basic/SubSubTitle";
 
 const stacks = [
   {
@@ -34,7 +35,7 @@ export default function Stacks() {
       <Subtitle>Stacks</Subtitle>
       {stacks.map((stack, idx) => (
         <>
-          <h3 key={idx + "-stack"}>{stack.name}</h3>
+          <SubSubTitle>{ stack.name }</SubSubTitle>
           {stack.technologies.map((tech, tidx) => 
             <p key={idx + "-" + tidx + "-tech"}>{tech.name}</p>
           )}
