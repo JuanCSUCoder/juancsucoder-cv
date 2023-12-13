@@ -14,7 +14,9 @@ const teko = Teko({
   weight: [
     '300',
     '400'
-  ]
+  ],
+  fallback: ["Verdana", "sans-serif"],
+  adjustFontFallback: true,
 })
 
 export const metadata: Metadata = {

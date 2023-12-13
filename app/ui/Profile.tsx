@@ -5,6 +5,8 @@ import Subtitle from "@/components/basic/Subtitle";
 import ContactInfo from "./profile-ui/ContactInfo";
 import WorkInfo from "./profile-ui/WorkInfo";
 
+import pic from "@/public/images/my-pic.jpg"
+
 export default function Profile() {
   return (
     <div>
@@ -12,9 +14,12 @@ export default function Profile() {
         <Image
           width={200}
           height={200}
-          src="/images/my-pic.jpg"
+          src={pic}
           alt="Profile picture"
           className="rounded-full"
+
+          placeholder="blur"
+          priority
         />
         <div className="flex flex-col mt-2 lg:m-4">
           <Title>Juan Camilo Sánchez Urrego - @JuanCSUCoder</Title>
