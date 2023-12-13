@@ -7,14 +7,14 @@ type TechType = {
 
 export default function TechCard({ tech }: { tech: TechType }) {
   return (
-		<div>
+		<div className="m-1 p-3 border-black border-solid border-2 rounded hover:bg-gray-200 flex flex-col justify-center items-center">
 			<Image
 				src={`/images/${tech.logo}`}
 				alt={`Logo of ${tech.name} technology`}
-				width={100}
-				height={100}
+				width={70}
+				height={70}
 			/>
-			<p>{tech.name}</p>
+			<p className="mt-1">{tech.name}</p>
 		</div>
   )
 }
