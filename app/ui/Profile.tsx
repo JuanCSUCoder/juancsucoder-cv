@@ -2,8 +2,8 @@ import Image from "next/image";
 import Title from "../components/basic/Title";
 import TitledElement from "@/components/custom/TitledElement";
 import Subtitle from "@/components/basic/Subtitle";
-import ContactInfo from "./ContactInfo";
-import WorkInfo from "./WorkInfo";
+import ContactInfo from "./profile-ui/ContactInfo";
+import WorkInfo from "./profile-ui/WorkInfo";
 
 export default function Profile() {
   return (
