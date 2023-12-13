@@ -18,6 +18,8 @@ export default function TechCard({ tech, small }: { tech: TechType, small?: bool
           fill
           style={{ objectFit: "contain" }}
           sizes="4rem, 1.75rem"
+
+          placeholder={loadingDataURL}
         />
       </div>
       <p className={"mt-1" + (small ? " text-sm" : "")}>{tech.name}</p>
