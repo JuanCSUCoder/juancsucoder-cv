@@ -24,7 +24,7 @@ const stacks = [
       },
       {
         name: "NestJS",
-        logo: "NestJS",
+        logo: "nestjs.svg",
       },
     ],
   },
@@ -36,10 +36,12 @@ export default function Stacks() {
       <Subtitle>Stacks</Subtitle>
       {stacks.map((stack, idx) => (
         <>
-          <SubSubTitle>{ stack.name }</SubSubTitle>
-          {stack.technologies.map((tech, tidx) => 
-            <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
-          )}
+          <SubSubTitle>{stack.name}</SubSubTitle>
+          <div className="flex flex-row flex-wrap">
+            {stack.technologies.map((tech, tidx) => (
+              <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
+            ))}
+          </div>
         </>
       ))}
     </>
