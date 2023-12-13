@@ -10,7 +10,7 @@ import Education from "./ui/Education";
 
 export default function Home() {
   return (
-    <main className="p-8">
+    <main className="p-8 sm:p-10 lg:p-14">
       <Profile />
       <Stacks />
       <Projects />

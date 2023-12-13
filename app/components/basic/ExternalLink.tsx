@@ -5,6 +5,6 @@ export default function ExternalLink({ children, href }: {
   href: string
 }) {
   return (
-    <a href={href} target="_blank" className="underline">{children}</a>
+    <a href={href} target="_blank" className="underline w-full block overflow-clip">{children}</a>
   )
 }
