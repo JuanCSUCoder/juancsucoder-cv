@@ -13,7 +13,7 @@ export default function TechCard({ tech }: { tech: TechType }) {
           src={`/images/${tech.logo}`}
           alt={`Logo of ${tech.name} technology`}
 					fill
-					objectFit="contain"
+					style={{objectFit: "contain"}}
         />
       </div>
       <p className="mt-1">{tech.name}</p>

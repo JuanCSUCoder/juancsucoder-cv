@@ -6,6 +6,8 @@ type ProjectType = {
 
 export default function ProjectCard({project}: {project: ProjectType}) {
   return (
-    <SubSubTitle>{ project.name }</SubSubTitle>
-  )
+    <div>
+      <SubSubTitle>{project.name}</SubSubTitle>
+    </div>
+  );
 }
