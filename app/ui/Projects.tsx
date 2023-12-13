@@ -1,44 +1,45 @@
 import Subtitle from "@/components/basic/Subtitle";
 import ProjectCard from "./project-ui/ProjectCard";
 
-const projects = [
+export type ProjectType = {
+  name: string;
+  link?: string;
+};
+
+const projects: ProjectType[] = [
   {
-    name: "Flatboat CLI"
+    name: "Flatboat Project",
+    link: "https://github.com/JuanCSUCoder/FlatBoatProject",
   },
   {
-    name: "Flatboat Images"
+    name: "RobotEn",
+    link: "https://github.com/JuanCSUCoder/RobotEn",
   },
   {
-    name: "Flatboat Templates"
+    name: "ViRust",
   },
   {
-    name: "RobotEn"
+    name: "CertAsset",
   },
   {
-    name: "ViRust"
+    name: "Caseta",
   },
   {
-    name: "CertAsset"
+    name: "Baxter Interface 2",
   },
   {
-    name: "Caseta"
+    name: "Docker GNS3 Appliances",
   },
   {
-    name: "Baxter Interface 2"
+    name: "SystemicWorks",
   },
   {
-    name: "Docker GNS3 Appliances"
+    name: "TerMoney",
   },
   {
-    name: "SystemicWorks"
+    name: "Hamachi with Haguichi in Docker",
   },
-  {
-    name: "TerMoney"
-  },
-  {
-    name: "Hamachi with Haguichi in Docker"
-  }
-]
+];
 
 export default function Projects() {
   return (
