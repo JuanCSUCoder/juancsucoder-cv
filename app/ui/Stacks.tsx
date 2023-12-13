@@ -3,11 +3,11 @@ import SubSubTitle from "../components/basic/SubSubTitle";
 import TechCard from "./stack-ui/TechCard";
 
 const stacks: {
-  name: string,
+  name: string;
   technologies: {
-    name: string,
-    logo: string
-  }[]
+    name: string;
+    logo: string;
+  }[];
 }[] = [
   {
     name: "Web Stack",
@@ -39,35 +39,39 @@ const stacks: {
     technologies: [
       {
         name: "Rust Lang",
-        logo: "rust.svg"
+        logo: "rust.svg",
       },
       {
         name: "Tokio Runtime",
-        logo: "tokio.svg"
+        logo: "tokio.svg",
       },
       {
         name: "Clap CLI Library",
-        logo: "clap.png"
-      }
-    ]
+        logo: "clap.png",
+      },
+    ],
   },
   {
     name: "Blockchain Stack",
     technologies: [
       {
         name: "Solana Native",
-        logo: "sol.svg"
+        logo: "sol.svg",
       },
       {
         name: "Anchor Lang",
-        logo: "anchor.jpg"
+        logo: "anchor.jpg",
+      },
+      {
+        name: "Rust Lang",
+        logo: "rust.svg",
       },
       {
         name: "Ethereum Solidity",
-        logo: "solidity.png"
-      }
-    ]
-  }
+        logo: "solidity.png",
+      },
+    ],
+  },
 ];
 
 export default function Stacks() {
