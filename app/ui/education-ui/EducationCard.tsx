@@ -8,10 +8,10 @@ export default function EducationCard({ education }: { education: EducationRegis
     <div>
       <SubSubTitle>{education.institition}</SubSubTitle>
       <div className="flex flex-row justify-center items-center w-fit">
-        <Tag bgColor="stone-900" textColor="white">
+        <Tag className="bg-stone-900 text-white">
           <p>{education.title}</p>
         </Tag>
-        <Tag bgColor="slate-500" textColor="white">
+        <Tag className="bg-slate-500 text-white">
           {education.startDate ? <>
             <span>{education.startDate.getFullYear()}</span>
             <span>-</span>
@@ -19,7 +19,7 @@ export default function EducationCard({ education }: { education: EducationRegis
           <span>{education.endDate.getFullYear()}</span>
         </Tag>
         {now < education.endDate ? (
-          <Tag bgColor="green-700" textColor="white">
+          <Tag className="bg-green-700 text-white">
             EN CURSO
           </Tag>
         ) : (
