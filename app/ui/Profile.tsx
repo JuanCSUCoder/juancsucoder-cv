@@ -12,8 +12,9 @@ export default function Profile() {
         <Image
           width={200}
           height={200}
-          src="https://placehold.co/200"
-          alt="Texto explicativo"
+          src="/images/my-pic.jpg"
+          alt="Profile picture"
+          className="rounded-full"
         />
         <div className="flex flex-col mt-2 lg:m-4">
           <Title>Juan Camilo Sánchez Urrego - @JuanCSUCoder</Title>
