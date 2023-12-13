@@ -32,22 +32,70 @@ const projects: ProjectType[] = [
     link: "https://github.com/JuanCSUCoder/RobotEn",
     logo: "roboten.svg",
     desc: "Devcontainer templates for some ROS (Robotic Operating System) distributions.",
+    technologies: [
+      {
+        name: "Docker",
+        logo: "docker.svg",
+      },
+    ],
   },
   {
     name: "ViRust",
     link: "https://github.com/JuanCSUCoder/ViRust",
     desc: 'ViRust is a "benchmarking" tool or software that allows you to fill the desired amount of memory with random values, to see how your computer performs with limited RAM.',
+    technologies: [
+      {
+        name: "Rust Lang",
+        logo: "rust.svg",
+      },
+      {
+        name: "Clap CLI Library",
+        logo: "clap.png",
+      },
+    ],
   },
   {
     name: "CertAsset",
     link: "https://github.com/JuanCSUCoder/CertAsset",
     desc: "A Solana Smart-Contract for certification of real-state or physical assets, into a NFT digital asset, by a selected Certification Authority, developed with the Anchor Framework.",
+    technologies: [
+      {
+        name: "Rust Lang",
+        logo: "rust.svg",
+      },
+      {
+        name: "Anchor Lang",
+        logo: "anchor.jpg",
+      },
+    ],
   },
   {
     name: "Caseta",
     link: "https://caseta-web-app.vercel.app/",
     logo: "caseta.webp",
     desc: "A fast, secure and realiable way of making realstate transactions globally. Your real-world assets are represented as digital assets that you own. You are in full control of them. Assets are never transfered if sale-contract conditions are not met.",
+    technologies: [
+      {
+        name: "Solana Native",
+        logo: "sol.svg",
+      },
+      {
+        name: "Anchor Lang",
+        logo: "anchor.jpg",
+      },
+      {
+        name: "Rust Lang",
+        logo: "rust.svg",
+      },
+      {
+        name: "NextJS",
+        logo: "nextjs.svg",
+      },
+      {
+        name: "React",
+        logo: "react.svg",
+      },
+    ],
   },
   {
     name: "Baxter Interface 2",
@@ -58,6 +106,12 @@ const projects: ProjectType[] = [
     name: "Docker GNS3 Appliances",
     link: "https://github.com/JuanCSUCoder/GNS3Appliances",
     desc: "Appliances to build virtual networks in GNS3 using Docker",
+    technologies: [
+      {
+        name: "Docker",
+        logo: "docker.svg",
+      },
+    ],
   },
   {
     name: "SystemicWorks",
@@ -69,11 +123,23 @@ const projects: ProjectType[] = [
     name: "TerMoney",
     link: "https://github.com/JuanCSUCoder/TerMoney",
     desc: "It's a command-line application intended to help recording and managing simple financial records for personal use.",
+    technologies: [
+      {
+        name: "Rust Lang",
+        logo: "rust.svg",
+      },
+    ],
   },
   {
     name: "Hamachi with Haguichi in Docker",
     link: "https://github.com/JuanCSUCoder/HamachiHaguichiDocker",
     desc: "A little workaround to make hamachi work on any linux system properly, with a graphical interface. Using Docker.",
+    technologies: [
+      {
+        name: "Docker",
+        logo: "docker.svg",
+      },
+    ],
   },
 ];
 

@@ -30,7 +30,7 @@ export default function ProjectCard({project}: {project: ProjectType}) {
         ""
       )}
       {project.desc ? <p>{project.desc}</p> : ""}
-      <div className="flex flex-row">
+      <div className="flex flex-row flex-wrap">
         {project.technologies?.map((tech, tidx) => (
           <TechCard key={`${tidx}-tech-proj-${project.name}`} small tech={tech} />
         ))}
