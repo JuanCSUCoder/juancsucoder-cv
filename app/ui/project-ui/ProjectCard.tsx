@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function ProjectCard({project}: {project: ProjectType}) {
   return (
-    <div className="mt-2">
+    <div className="mt-2 mr-2 max-w-md">
       <div className="flex flex-row justify-center items-center w-fit">
         {project.logo ? (
           <div className="w-10 h-10 mr-2 relative">
