@@ -72,6 +72,39 @@ const stacks: {
       },
     ],
   },
+  {
+    name: "Cloud Stack",
+    technologies: [
+      {
+        name: "Docker",
+        logo: "docker.svg"
+      },
+      {
+        name: "Docker Compose",
+        logo: "compose.png"
+      },
+      {
+        name: "Kubernetes",
+        logo: "kubernetes.svg"
+      },
+      {
+        name: "Ubuntu Server",
+        logo: "ubuntu.svg"
+      },
+      {
+        name: "Alpine Linux",
+        logo: "alpine.png"
+      },
+      {
+        name: "K3s K8s Distro",
+        logo: "k3s.png"
+      },
+      {
+        name: "Longhorn Storage",
+        logo: "longhorn.png"
+      }
+    ]
+  }
 ];
 
 export default function Stacks() {

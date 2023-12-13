@@ -12,7 +12,7 @@ export default function WorkInfo() {
         <TitledElement title="DEVELOPER" href="#">
           Rust Solana Native/Anchor Lang (Blockchain)
         </TitledElement>
-				<TitledElement title="DEVOPS" href="#">
+				<TitledElement title="CLOUD DEVOPS" href="#">
 					Alpine Linux/Docker Compose/Longhorn/K3s/K8s
 				</TitledElement>
       </ul>
