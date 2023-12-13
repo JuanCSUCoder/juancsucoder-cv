@@ -4,7 +4,7 @@ import EducationCard from "./education-ui/EducationCard";
 export type EducationRegistry = {
   institition: string;
   title: string;
-  startDate: Date;
+  startDate?: Date;
   endDate: Date;
 }
 

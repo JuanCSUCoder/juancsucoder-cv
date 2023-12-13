@@ -12,8 +12,10 @@ export default function EducationCard({ education }: { education: EducationRegis
           <p>{education.title}</p>
         </Tag>
         <Tag bgColor="slate-500" textColor="white">
-          <span>{education.startDate.getFullYear()}</span>
-          <span>-</span>
+          {education.startDate ? <>
+            <span>{education.startDate.getFullYear()}</span>
+            <span>-</span>
+          </> : ""}
           <span>{education.endDate.getFullYear()}</span>
         </Tag>
         {now < education.endDate ? (
