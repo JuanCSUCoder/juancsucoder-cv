@@ -2,7 +2,13 @@ import Subtitle from "@/components/basic/Subtitle";
 import SubSubTitle from "../components/basic/SubSubTitle";
 import TechCard from "./stack-ui/TechCard";
 
-const stacks = [
+const stacks: {
+  name: string,
+  technologies: {
+    name: string,
+    logo: string
+  }[]
+}[] = [
   {
     name: "Web Stack",
     technologies: [
@@ -28,6 +34,23 @@ const stacks = [
       },
     ],
   },
+  {
+    name: "Blockchain Stack",
+    technologies: [
+      {
+        name: "Solana Native",
+        logo: "sol.svg"
+      },
+      {
+        name: "Anchor Lang",
+        logo: "anchor.jpg"
+      },
+      {
+        name: "Ethereum Solidity",
+        logo: "solidity.png"
+      }
+    ]
+  }
 ];
 
 export default function Stacks() {
@@ -36,7 +59,7 @@ export default function Stacks() {
       <Subtitle>Stacks</Subtitle>
       {stacks.map((stack, idx) => (
         <>
-          <SubSubTitle>{stack.name}</SubSubTitle>
+          <SubSubTitle className="mt-5">{stack.name}</SubSubTitle>
           <div className="flex flex-row flex-wrap">
             {stack.technologies.map((tech, tidx) => (
               <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
