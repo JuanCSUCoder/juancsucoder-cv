@@ -5,6 +5,6 @@ export default function ExternalLink({ children, href }: {
   href: string
 }) {
   return (
-    <a href={href}>{children}</a>
+    <a href={href} className="underline">{children}</a>
   )
 }

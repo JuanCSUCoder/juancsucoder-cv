@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-type TechType = {
+export type TechType = {
 	name: string,
 	logo: string
 }

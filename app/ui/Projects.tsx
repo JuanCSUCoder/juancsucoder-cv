@@ -1,15 +1,19 @@
 import Subtitle from "@/components/basic/Subtitle";
 import ProjectCard from "./project-ui/ProjectCard";
+import { TechType } from "./stack-ui/TechCard";
 
 export type ProjectType = {
   name: string;
   link?: string;
+  logo?: string;
+  technologies?: TechType[];
 };
 
 const projects: ProjectType[] = [
   {
     name: "Flatboat Project",
     link: "https://github.com/JuanCSUCoder/FlatBoatProject",
+    logo: "flatboat.png"
   },
   {
     name: "RobotEn",
