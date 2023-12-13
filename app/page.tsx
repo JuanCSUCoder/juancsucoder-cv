@@ -6,6 +6,7 @@ import TitledElement from "@/components/custom/TitledElement";
 import Profile from "@/app/ui/Profile";
 import Stacks from "./ui/Stacks";
 import Projects from "./ui/Projects";
+import Education from "./ui/Education";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Profile />
       <Stacks />
       <Projects />
-      <Subtitle>Education</Subtitle>
+      <Education />
     </main>
   );
 }
