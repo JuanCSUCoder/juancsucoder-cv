@@ -1,5 +1,6 @@
 import Subtitle from "@/components/basic/Subtitle";
 import SubSubTitle from "../components/basic/SubSubTitle";
+import TechCard from "./stack-ui/TechCard";
 
 const stacks = [
   {
@@ -37,7 +38,7 @@ export default function Stacks() {
         <>
           <SubSubTitle>{ stack.name }</SubSubTitle>
           {stack.technologies.map((tech, tidx) => 
-            <p key={idx + "-" + tidx + "-tech"}>{tech.name}</p>
+            <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
           )}
         </>
       ))}
