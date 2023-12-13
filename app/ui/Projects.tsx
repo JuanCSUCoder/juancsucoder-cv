@@ -1,4 +1,5 @@
 import Subtitle from "@/components/basic/Subtitle";
+import ProjectCard from "./project-ui/ProjectCard";
 
 const projects = [
   {
@@ -43,7 +44,9 @@ export default function Projects() {
   return (
     <>
       <Subtitle>Projects & Experience</Subtitle>
-
+      {projects.map((project, pidx) => 
+        <ProjectCard key={`${pidx}-proj`} project={project} />
+      )}
     </>
   )
 }
