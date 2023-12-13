@@ -6,6 +6,7 @@ export type ProjectType = {
   name: string;
   link?: string;
   logo?: string;
+  desc?: string;
   technologies?: TechType[];
 };
 
@@ -14,11 +15,13 @@ const projects: ProjectType[] = [
     name: "Flatboat Project",
     link: "https://github.com/JuanCSUCoder/FlatBoatProject",
     logo: "flatboat.png",
+    desc: "A tool for developing and deploying ROS packages with Docker in Kubernetes.",
   },
   {
     name: "RobotEn",
     link: "https://github.com/JuanCSUCoder/RobotEn",
     logo: "roboten.svg",
+    desc: "Devcontainer templates for some ROS (Robotic Operating System) distributions.",
   },
   {
     name: "ViRust",
