@@ -35,6 +35,23 @@ const stacks: {
     ],
   },
   {
+    name: "Rust Backend Stack",
+    technologies: [
+      {
+        name: "Rust Lang",
+        logo: "rust.svg"
+      },
+      {
+        name: "Tokio Runtime",
+        logo: "tokio.svg"
+      },
+      {
+        name: "Clap CLI Library",
+        logo: "clap.png"
+      }
+    ]
+  },
+  {
     name: "Blockchain Stack",
     technologies: [
       {
@@ -60,7 +77,7 @@ export default function Stacks() {
       {stacks.map((stack, idx) => (
         <>
           <SubSubTitle className="mt-5">{stack.name}</SubSubTitle>
-          <div className="flex flex-row flex-wrap">
+          <div className="flex flex-row flex-wrap mb-2">
             {stack.technologies.map((tech, tidx) => (
               <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
             ))}
