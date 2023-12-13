@@ -2,6 +2,7 @@ import SubSubTitle from "@/components/basic/SubSubTitle"
 import { ProjectType } from "../Projects";
 import ExternalLink from "@/app/components/basic/ExternalLink";
 import Image from "next/image";
+import TechCard from "../stack-ui/TechCard";
 
 
 
@@ -15,10 +16,12 @@ export default function ProjectCard({project}: {project: ProjectType}) {
               src={`/images/${project.logo}`}
               alt={`Logo ${project.logo} of ${project.name} project.`}
               fill
-              style={{objectFit: "contain"}}
+              style={{ objectFit: "contain" }}
             />
           </div>
-        ) : ""}
+        ) : (
+          ""
+        )}
         <SubSubTitle className="mb-0">{project.name}</SubSubTitle>
       </div>
       {project.link ? (
@@ -26,9 +29,12 @@ export default function ProjectCard({project}: {project: ProjectType}) {
       ) : (
         ""
       )}
-      {project.desc ? (
-        <p>{project.desc}</p>
-      ): ""}
+      {project.desc ? <p>{project.desc}</p> : ""}
+      <div className="flex flex-row">
+        {project.technologies?.map((tech, tidx) => (
+          <TechCard key={`${tidx}-tech-proj-${project.name}`} small tech={tech} />
+        ))}
+      </div>
     </div>
   );
 }

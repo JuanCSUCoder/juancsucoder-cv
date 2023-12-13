@@ -16,6 +16,16 @@ const projects: ProjectType[] = [
     link: "https://github.com/JuanCSUCoder/FlatBoatProject",
     logo: "flatboat.png",
     desc: "A tool for developing and deploying ROS packages with Docker in Kubernetes.",
+    technologies: [
+      {
+        name: "Rust Lang",
+        logo: "rust.svg",
+      },
+      {
+        name: "Clap CLI Library",
+        logo: "clap.png",
+      },
+    ],
   },
   {
     name: "RobotEn",
