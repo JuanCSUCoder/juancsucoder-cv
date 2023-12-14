@@ -1,6 +1,7 @@
 import Subtitle from "@/components/basic/Subtitle";
 import SubSubTitle from "../components/basic/SubSubTitle";
 import TechCard from "./stack-ui/TechCard";
+import { Fragment } from "react";
 
 const stacks: {
   name: string;
@@ -112,14 +113,14 @@ export default function Stacks() {
     <>
       <Subtitle>Stacks</Subtitle>
       {stacks.map((stack, idx) => (
-        <>
+        <Fragment key={`${idx}-stack`}>
           <SubSubTitle className="mt-5">{stack.name}</SubSubTitle>
           <div className="flex flex-row flex-wrap mb-2">
             {stack.technologies.map((tech, tidx) => (
               <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
             ))}
           </div>
-        </>
+        </Fragment>
       ))}
     </>
   );
