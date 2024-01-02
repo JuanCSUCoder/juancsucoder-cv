@@ -11,13 +11,13 @@ export type EducationRegistry = {
 const education: EducationRegistry[] = [
   {
     institition: "Pontificia Universidad Javeriana",
-    title: "Ingeniero de Sistemas",
+    title: "Systems Engineer",
     startDate: new Date("2021-01-20"),
     endDate: new Date("2025-11-20"),
   },
   {
     institition: "Liceo de Cervantes Norte",
-    title: "Bachiller",
+    title: "Bachelor",
     startDate: new Date("2008-01-20"),
     endDate: new Date("2020-11-20"),
   },
@@ -26,7 +26,7 @@ const education: EducationRegistry[] = [
 export default function Education() {
   return (
     <>
-      <Subtitle className="mt-2">Education</Subtitle>
+      <Subtitle id="edu" className="mt-2">Education</Subtitle>
       {education.map((edu, eidx) => 
         <EducationCard key={`${eidx}-edu`} education={edu} />
       )}

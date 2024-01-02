@@ -1,6 +1,6 @@
 import Subtitle from "@/components/basic/Subtitle";
 import ProjectCard from "./project-ui/ProjectCard";
-import { TechType } from "./stack-ui/TechCard";
+import { TechType } from "../components/custom/TechCard";
 
 export type ProjectType = {
   name: string;
@@ -146,7 +146,7 @@ const projects: ProjectType[] = [
 export default function Projects() {
   return (
     <>
-      <Subtitle>Projects & Experience</Subtitle>
+      <Subtitle id="projects">Projects & Experience</Subtitle>
       <div className="grid grid-flow-row lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2">
         {projects.map((project, pidx) => (
           <ProjectCard key={`${pidx}-proj`} project={project} />

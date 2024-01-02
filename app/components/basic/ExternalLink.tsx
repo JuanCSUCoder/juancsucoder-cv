@@ -9,7 +9,7 @@ export default function ExternalLink({ children, href }: {
     <a
       href={href}
       target="_blank"
-      className="underline w-full overflow-clip flex flex-row gap-1"
+      className="underline overflow-clip flex flex-row gap-1 w-fit"
     >
       {children} <CgExternal />
     </a>

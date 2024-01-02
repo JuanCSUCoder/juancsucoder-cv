@@ -22,7 +22,7 @@ export default function Profile() {
           priority
         />
         <div className="flex flex-col mt-2 lg:m-4">
-          <Title>Juan Camilo Sánchez Urrego - @JuanCSUCoder</Title>
+          <Title id="profile">Juan Camilo Sánchez Urrego - @JuanCSUCoder</Title>
           <div className="flex flex-col lg:flex-row">
             <ContactInfo />
             <hr className="border-gray-500 mt-1 mb-1 lg:hidden" />
