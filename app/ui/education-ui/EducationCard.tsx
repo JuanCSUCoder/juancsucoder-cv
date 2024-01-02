@@ -20,7 +20,7 @@ export default function EducationCard({ education }: { education: EducationRegis
         </Tag>
         {now < education.endDate ? (
           <Tag className="bg-green-700 text-white">
-            EN CURSO
+            ON GOING
           </Tag>
         ) : (
           ""
