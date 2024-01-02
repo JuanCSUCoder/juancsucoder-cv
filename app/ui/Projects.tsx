@@ -1,6 +1,6 @@
 import Subtitle from "@/components/basic/Subtitle";
 import ProjectCard from "./project-ui/ProjectCard";
-import { TechType } from "./stack-ui/TechCard";
+import { TechType } from "../components/custom/TechCard";
 
 export type ProjectType = {
   name: string;

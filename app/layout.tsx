@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={teko.className}>{children}</body>
+      <body className={teko.className + " w-screen"}>{children}</body>
     </html>
   )
 }
