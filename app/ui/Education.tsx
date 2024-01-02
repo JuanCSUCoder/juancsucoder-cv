@@ -26,7 +26,7 @@ const education: EducationRegistry[] = [
 export default function Education() {
   return (
     <>
-      <Subtitle className="mt-2">Education</Subtitle>
+      <Subtitle id="edu" className="mt-2">Education</Subtitle>
       {education.map((edu, eidx) => 
         <EducationCard key={`${eidx}-edu`} education={edu} />
       )}

@@ -1,11 +1,12 @@
 import React from "react";
 
-export default function Subtitle({ children, className }: {
+export default function Subtitle({ children, className, id }: {
     children: React.ReactNode,
-    className?: string
+    className?: string,
+    id?: string,
 }) {
     return (
-        <h2 className={'text-3xl mb-1' + (className ? ' ' + className : '')}>
+        <h2 id={id} className={'text-3xl mb-1' + (className ? ' ' + className : '')}>
             {children}
         </h2>
     )
