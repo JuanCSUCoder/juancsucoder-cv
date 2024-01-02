@@ -29,16 +29,20 @@ const languages: TechType[] = [
     logo: "kotlin.svg",
   },
   {
-    name: "C++",
-    logo: "c++.svg",
-  },
-  {
     name: "HTML 5",
     logo: "html5.svg",
   },
   {
     name: "CSS",
     logo: "css.svg",
+  },
+  {
+    name: "Bash",
+    logo: "bash.svg",
+  },
+  {
+    name: "C++",
+    logo: "c++.svg",
   },
 ];
 
