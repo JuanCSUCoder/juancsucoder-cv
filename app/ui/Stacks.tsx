@@ -3,6 +3,7 @@ import SubSubTitle from "../components/basic/SubSubTitle";
 import TechCard from "../components/custom/TechCard";
 import { Fragment } from "react";
 import CardContainer from "../components/custom/CardContainer";
+import StacksGrid from "./StacksGrid";
 
 const stacks: {
   name: string;
@@ -113,16 +114,18 @@ export default function Stacks() {
   return (
     <>
       <Subtitle>Stacks</Subtitle>
-      {stacks.map((stack, idx) => (
-        <Fragment key={`${idx}-stack`}>
-          <SubSubTitle className="mt-5">{stack.name}</SubSubTitle>
-          <CardContainer>
-            {stack.technologies.map((tech, tidx) => (
-              <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
-            ))}
-          </CardContainer>
-        </Fragment>
-      ))}
+      <StacksGrid>
+        {stacks.map((stack, idx) => (
+          <Fragment key={`${idx}-stack`}>
+            <SubSubTitle className="mt-5">{stack.name}</SubSubTitle>
+            <CardContainer className="lg:col-span-4 lg:justify-end">
+              {stack.technologies.map((tech, tidx) => (
+                <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
+              ))}
+            </CardContainer>
+          </Fragment>
+        ))}
+      </StacksGrid>
     </>
   );
 }
