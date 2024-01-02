@@ -22,6 +22,7 @@ export default function ProjectCard({ project }: { project: ProjectType }) {
               src={`/images/${project.logo}`}
               alt={`Logo ${project.logo} of ${project.name} project.`}
               fill
+              sizes="2.5rem"
               style={{ objectFit: "contain" }}
             />
           </div>
