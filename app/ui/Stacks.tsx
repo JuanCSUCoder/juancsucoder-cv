@@ -1,7 +1,8 @@
 import Subtitle from "@/components/basic/Subtitle";
 import SubSubTitle from "../components/basic/SubSubTitle";
-import TechCard from "./stack-ui/TechCard";
+import TechCard from "../components/custom/TechCard";
 import { Fragment } from "react";
+import CardContainer from "../components/custom/CardContainer";
 
 const stacks: {
   name: string;
@@ -78,34 +79,34 @@ const stacks: {
     technologies: [
       {
         name: "Docker",
-        logo: "docker.svg"
+        logo: "docker.svg",
       },
       {
         name: "Docker Compose",
-        logo: "compose.png"
+        logo: "compose.png",
       },
       {
         name: "Kubernetes",
-        logo: "kubernetes.svg"
+        logo: "kubernetes.svg",
       },
       {
         name: "Ubuntu Server",
-        logo: "ubuntu.svg"
+        logo: "ubuntu.svg",
       },
       {
         name: "Alpine Linux",
-        logo: "alpine.png"
+        logo: "alpine.png",
       },
       {
         name: "K3s K8s Distro",
-        logo: "k3s.png"
+        logo: "k3s.png",
       },
       {
         name: "Longhorn Storage",
-        logo: "longhorn.png"
-      }
-    ]
-  }
+        logo: "longhorn.png",
+      },
+    ],
+  },
 ];
 
 export default function Stacks() {
@@ -115,11 +116,11 @@ export default function Stacks() {
       {stacks.map((stack, idx) => (
         <Fragment key={`${idx}-stack`}>
           <SubSubTitle className="mt-5">{stack.name}</SubSubTitle>
-          <div className="flex flex-row flex-wrap mb-2">
+          <CardContainer>
             {stack.technologies.map((tech, tidx) => (
               <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
             ))}
-          </div>
+          </CardContainer>
         </Fragment>
       ))}
     </>

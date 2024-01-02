@@ -1,10 +1,8 @@
-import SubSubTitle from "@/components/basic/SubSubTitle"
+import SubSubTitle from "@/components/basic/SubSubTitle";
 import { ProjectType } from "../Projects";
 import ExternalLink from "@/app/components/basic/ExternalLink";
 import Image from "next/image";
-import TechCard from "../stack-ui/TechCard";
-
-
+import TechCard from "../../components/custom/TechCard";
 
 export default function ProjectCard({ project }: { project: ProjectType }) {
   const techsNum = project.technologies?.length;
