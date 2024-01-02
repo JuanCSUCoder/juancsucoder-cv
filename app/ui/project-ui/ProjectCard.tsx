@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: { project: ProjectType }) {
   }
 
   return (
-    <div className="mt-2 mr-2 mb-2 w-72 md:max-w-md">
+    <div className="mt-2 md:mr-2 mb-2 md:max-w-md overflow-hidden">
       <div className="flex flex-row justify-center items-center w-fit">
         {project.logo ? (
           <div className="w-10 h-10 mr-2 relative rounded overflow-hidden">
