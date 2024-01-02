@@ -49,7 +49,7 @@ const languages: TechType[] = [
 export default function Langs() {
   return (
     <>
-      <Subtitle className="text-center">Languages</Subtitle>
+      <Subtitle id="langs" className="text-center">Languages</Subtitle>
       <CardContainer className="justify-center">
         {languages.map((lang, idx) => (
           <TechCard key={`lang-tech-${idx}`} tech={lang} />

@@ -113,7 +113,7 @@ const stacks: {
 export default function Stacks() {
   return (
     <>
-      <Subtitle>Stacks</Subtitle>
+      <Subtitle id="stacks">Stacks</Subtitle>
       <StacksGrid>
         {stacks.map((stack, idx) => (
           <Fragment key={`${idx}-stack`}>
