@@ -118,7 +118,7 @@ export default function Stacks() {
         {stacks.map((stack, idx) => (
           <Fragment key={`${idx}-stack`}>
             <SubSubTitle className="mt-5">{stack.name}</SubSubTitle>
-            <CardContainer className="lg:col-span-4 lg:justify-end">
+            <CardContainer className="lg:col-span-4 lg:justify-end lg:bg-gray-300 lg:p-4 rounded-xl lg:ml-4">
               {stack.technologies.map((tech, tidx) => (
                 <TechCard key={`${idx}-${tidx}-tech`} tech={tech} />
               ))}

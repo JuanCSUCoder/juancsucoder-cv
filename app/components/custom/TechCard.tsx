@@ -10,7 +10,7 @@ export type TechType = {
 
 export default function TechCard({ tech, small }: { tech: TechType, small?: boolean }) {
   return (
-    <div className="m-1 p-3 w-fit rounded hover:bg-gray-400 transition-colors duration-500 flex flex-col justify-center items-center shadow-lg shadow-black">
+    <div className="m-1 p-3 bg-white w-fit rounded hover:bg-gray-400 transition-colors duration-500 flex flex-col justify-center items-center shadow-lg shadow-black">
       <div className={(small ? "w-7 h-7" : "w-16 h-16") + " " + "relative"}>
         <Image
           src={`/images/${tech.logo}`}
