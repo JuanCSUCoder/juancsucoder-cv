@@ -8,7 +8,7 @@ export type MenuItem = {
 export default function MenuElement({ item }:{item: MenuItem}) {
   return (
     <li>
-      <Link href={`#${item.tag}`}>{ item.label }</Link>
+      <Link href={`#${item.tag}`} className="block p-3 pb-2 hover:bg-slate-300 box-border text-center">{ item.label }</Link>
     </li>
   )
 }
