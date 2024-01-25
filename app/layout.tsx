@@ -22,6 +22,9 @@ const teko = Teko({
 export const metadata: Metadata = {
   title: '@JuanCSUCoder CV',
   description: 'Curriculum Vitae of Juan Camilo Sánchez Urrego. Open-Source developer.',
+  verification: {
+    google: "uwphExcD7BcljJTiP9H_3uCeS0UQcwlw7bwCUju8198", // <meta name="google-site-verification" content="uwphExcD7BcljJTiP9H_3uCeS0UQcwlw7bwCUju8198" />
+  },
 }
 
 export default function RootLayout({
